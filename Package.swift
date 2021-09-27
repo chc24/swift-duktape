@@ -22,10 +22,10 @@ let package = Package(
             dependencies: [],
             path: "Sources/CDuktape",
             exclude: ["swift-duktape"],
-            publicHeadersPath: "Sources/CDuktape/include/",
-            cSettings: [
-                .headerSearchPath("include/")
-            ]
+            publicHeadersPath: "include/"
+//            cSettings: [
+//                .headerSearchPath("include/")
+//            ]
         ),
         .target(
             name: "swift-duktape",
