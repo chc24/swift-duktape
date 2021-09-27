@@ -10,8 +10,7 @@ let package = Package(
         .library(
             name: "swift-duktape",
             targets: [
-                "swift-duktape",
-                "CDuktape"
+                "swift-duktape"
             ]
         ),
     ],
@@ -28,7 +27,7 @@ let package = Package(
             path: "Sources/CDuktape",
             exclude: ["swift-duktape"],
             cSettings: [
-                .headerSearchPath("include")
+                .headerSearchPath("include/")
             ]
         ),
         .target(
@@ -36,6 +35,7 @@ let package = Package(
             dependencies: [
                 "CDuktape"
             ],
+            path: "Sources/swift-duktape",
             exclude: [
                 "Upstream/"
             ]
