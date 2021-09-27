@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "CDuktape",
             dependencies: [],
-            path: "Sources/CDuktape",
+            path: "Sources/CDuktape/",
             exclude: ["swift-duktape"],
             publicHeadersPath: "include/"
 //            cSettings: [
@@ -32,7 +32,7 @@ let package = Package(
             dependencies: [
                 "CDuktape"
             ],
-            path: "Sources/swift-duktape",
+            path: "Sources/swift-duktape/",
             exclude: [
                 "Upstream/"
             ]
