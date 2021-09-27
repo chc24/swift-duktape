@@ -28,7 +28,7 @@ let package = Package(
             path: "Sources/CDuktape",
             exclude: ["swift-duktape"],
             cSettings: [
-                .headerSearchPath("include/")
+                .headerSearchPath("include/CDuktape.h")
             ]
         ),
         .target(
