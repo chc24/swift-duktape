@@ -10,7 +10,8 @@ let package = Package(
         .library(
             name: "swift-duktape",
             targets: [
-                "swift-duktape"
+                "swift-duktape",
+                "CDuktape"
             ]
         ),
     ],
