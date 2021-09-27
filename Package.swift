@@ -8,9 +8,9 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "swift-duktape",
+            name: "CDuktape",
             targets: [
-                "swift-duktape"
+                "CDuktape"
             ]
         ),
     ],
@@ -34,15 +34,15 @@ let package = Package(
 //                .headerSearchPath("include/")
 //            ]
         ),
-        .target(
-            name: "swift-duktape",
-            dependencies: [
-                "CDuktape"
-            ],
-            path: "Sources/swift-duktape/",
-            exclude: [
-                "Upstream/"
-            ]
-        )
+//        .target(
+//            name: "swift-duktape",
+//            dependencies: [
+//                "CDuktape"
+//            ],
+//            path: "Sources/swift-duktape/",
+//            exclude: [
+//                "Upstream/"
+//            ]
+//        )
     ]
 )

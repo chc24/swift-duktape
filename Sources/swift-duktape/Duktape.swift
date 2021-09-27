@@ -1,4 +1,4 @@
-import CDuktape
+@_exported import CDuktape
 
 func duk_error(_ ctx: OpaquePointer!, _ code: duk_errcode_t, _ fmt: String, _ args: CVarArg...)  {
 	withVaList(args) { va_list in
