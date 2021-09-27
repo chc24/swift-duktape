@@ -33,7 +33,6 @@ let package = Package(
                 "CDuktape"
             ],
             exclude: [
-                "Sources/CDuktape",
                 "Upstream/"
             ]
         )
