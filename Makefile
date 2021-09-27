@@ -31,12 +31,12 @@ AUTHORS.duktape.rst: Upstream/AUTHORS.rst
 LICENSE.duktape.txt: Upstream/LICENSE.txt
 	cp $< $@
 
-Upstream/%: $(DUKTAPE_UPSTREAM_FILE)
-	mkdir -p Upstream
-	cd Upstream && tar xJmf ../$(DUKTAPE_UPSTREAM_FILE) --strip-components=1
+# Upstream/%: $(DUKTAPE_UPSTREAM_FILE)
+# 	mkdir -p Upstream
+# 	cd Upstream && tar xJmf ../$(DUKTAPE_UPSTREAM_FILE) --strip-components=1
 
 $(DUKTAPE_UPSTREAM_FILE): 
-	curl -O http://duktape.org/duktape-1.5.1.tar.xz
+	curl -OL http://duktape.org/duktape-1.5.1.tar.xz
 
 .PHONY: check
 check: all
