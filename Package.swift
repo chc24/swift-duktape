@@ -22,6 +22,7 @@ let package = Package(
             dependencies: [],
             path: "Sources/CDuktape",
             exclude: ["swift-duktape"],
+            publicHeadersPath: "include/",
             cSettings: [
                 .headerSearchPath("include/")
             ]
